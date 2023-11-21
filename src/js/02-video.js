@@ -4,8 +4,6 @@ import throttle from 'lodash.throttle';
 const iframe = document.querySelector('iframe');
 
 const player = new Vimeo.Player(iframe);
-console.log(player);
-console.dir(iframe);
 
 // iframe.addEventListener('timeupdate', onPlay);
 
