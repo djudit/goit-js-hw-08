@@ -21,6 +21,7 @@ function handleInput(event) {
 }
 
 function handleSubmit(event) {
+  console.log(objStorage);
   event.preventDefault();
   event.target.reset();
   localStorage.removeItem('feedback-form-state');
@@ -33,5 +34,4 @@ function saveTextarea() {
     input.value = savedInput.email;
     textarea.value = savedInput.message;
   }
-  console.log(savedObj);
 }
