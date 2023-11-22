@@ -13,7 +13,6 @@ saveTextarea();
 
 function handleInput(event) {
   objStorage[event.target.name] = event.target.value;
-
   const storage = localStorage.setItem(
     'feedback-form-state',
     JSON.stringify(objStorage)
@@ -33,5 +32,6 @@ function saveTextarea() {
   if (savedObj) {
     input.value = savedInput.email;
     textarea.value = savedInput.message;
+    // console.log(savedInput);
   }
 }
