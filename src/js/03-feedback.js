@@ -7,8 +7,9 @@ const input = document.querySelector('input');
 form.addEventListener('input', throttle(handleInput, 500));
 form.addEventListener('submit', handleSubmit);
 
-let objStorage = {};
-
+const objStorage =
+  JSON.parse(localStorage.getItem('feedback-form-state')) || {};
+console.log(objStorage);
 saveTextarea();
 
 function handleInput(event) {
